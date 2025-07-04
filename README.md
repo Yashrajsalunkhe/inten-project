@@ -1,6 +1,6 @@
-# AI Chatbot Project (Excel/CSV Data Analysis)
+# AI Chatbot Project (Excel/CSV Data Analysis) — Gemini API Version
 
-This project is an AI-powered chatbot that allows users to upload Excel or CSV files, ask natural language questions about their data, and receive intelligent answers, summaries, and visualizations. It uses React (Vite) for the frontend and Flask (Python) for the backend, with LLaMA 3 (Groq API) for advanced AI code generation.
+This project is an AI-powered chatbot that allows users to upload Excel or CSV files, ask natural language questions about their data, and receive intelligent answers, summaries, and visualizations. It uses React (Vite) for the frontend and Flask (Python) for the backend, with Gemini API for advanced AI code generation.
 
 ---
 
@@ -11,7 +11,7 @@ This project is an AI-powered chatbot that allows users to upload Excel or CSV f
 - **Get instant answers**: row counts, averages, totals, column names, etc.
 - **Generate charts**: bar, pie, and line charts as images
 - **Trend analysis and suggestions**
-- **AI-powered code-based answers** (using Groq LLaMA 3)
+- **AI-powered code-based answers** (using Gemini API)
 - **Conversational AI**: responds to general chat as well as data queries
 
 ---
@@ -34,7 +34,7 @@ ai-chatbot-project/
 │   │   ├── chat_handler.py        # handles user messages & AI
 │   │   └── chart_generator.py     # generates charts
 │   ├── uploads/                  # uploaded files
-│   └── .env                      # contains GROQ_API_KEY
+│   └── .env                      # contains GEMINI_API_KEY
 ```
 
 ---
@@ -51,7 +51,7 @@ ai-chatbot-project/
 2. **Set up environment variables:**
    - Create a `.env` file in the `backend/` folder:
      ```env
-     GROQ_API_KEY=your-groq-api-key-here
+     GEMINI_API_KEY=your-gemini-api-key-here
      ```
 3. **Run the backend server:**
    ```zsh
@@ -94,14 +94,14 @@ ai-chatbot-project/
 
 ## Environment Variables
 
-- `GROQ_API_KEY` — Your Groq API key for LLaMA 3 (required for AI code generation)
+- `GEMINI_API_KEY` — Your Gemini API key (required for AI code generation)
 
 ---
 
 ## Technologies Used
 - **Frontend:** React, Vite, Tailwind CSS
 - **Backend:** Flask, Pandas, Matplotlib, Python-dotenv
-- **AI:** Groq API (LLaMA 3)
+- **AI:** Gemini API
 
 ---
 
@@ -114,4 +114,4 @@ MIT License
 ## Credits
 
 - Built by Yashraj Salunkhe and contributors
-- Powered by Groq LLaMA 3, React, Flask, and open-source tools
+- Powered by Gemini API, React, Flask, and open-source tools
